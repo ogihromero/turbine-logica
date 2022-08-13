@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+    <title>Turbine sua lógica - Desafio 2</title>
+</head>
+
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
+
+        function mostra(texto) {
+            document.write(texto);
+            pulaLinha();
+        }
+
+        numero1 = parseInt(prompt("Informe o primeiro valor"));
+        numero2 = parseInt(prompt("Informe o segundo valor"));
+        operacao = prompt("Informe a operacao que deseja +,-, ou * (o padrao é adição)");
+        var operacaoString = "adição";
+        if (operacao == "-") {
+            var resultado = numero1 - numero2;
+            operacaoString = "subtração";
+        }
+        else if (operacao =="*"){
+            resultado = numero1 * numero2;
+            operacaoString = "multiplicação";
+        }
+        else {
+            resultado = numero1 + numero2;
+        }
+
+        mostra("O resultado da " + operacaoString + " é : " + resultado);
+
+    </script>
+</body>
+
+</html>

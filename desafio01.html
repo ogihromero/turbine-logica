@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Turbine sua lógica - Desafio 1</title>
+</head>
+
+<body>
+    <script>
+        mostra("Quero ter acesso ao EmpregaONE");
+        var numero = 8
+
+        mostra("Tabuada de: " + numero)
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
+
+        function mostra(texto) {
+            document.write(texto);
+            pulaLinha();
+        }
+
+        numero = prompt("Informe o número que desejada tabuada");
+
+        for (var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+
+            mostra(numero + "x" + multiplicador + " = " + numero * multiplicador);
+
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<html>
+
+    <head>
+
+        <title>Turbine sua lógica - Desafio 2</title>
+    </head>
+
+    <body>
+        <script>
+            function pulaLinha() {
+                document.write("<br><br>");
+            }
+
+            function mostra(texto) {
+                document.write(texto);
+                pulaLinha();
+            }
+
+            fim = parseInt(prompt("Informe o fim desejado do contador (serão exibidos os números pares até ele)"));
+            contador = 1;
+            while (contador <= fim) {
+
+                if ((contador %2) == 0) {
+
+                    mostra(contador);
+                } 
+
+                contador++;
+            }
+            
+
+            mostra("Fim da contagem dos pares até " + fim);
+
+        </script>
+    </body>
+
+</html>
